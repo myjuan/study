@@ -1,0 +1,39 @@
+<!-- 文件类型声明，用来告诉浏览器是html规则，正常开发中不需要做修改，但是建议网上搜一下了解 -->
+<!DOCTYPE html>
+<!-- 告诉搜索引擎该页面是html语言，并且语言为英文网站 -->
+<html lang="en">
+<!-- 定义头部文档内容、包括标题 样式引用 js文件引用 元信息等 -->
+<head>
+    <!-- 可以网上搜一下，定义元信息 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入外部样式的css文件 -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <!-- 标题 -->
+    <title>Document</title>
+    <!-- style内部样式 -->
+    <style>
+        .container {
+            height: 100%;
+            background-color: antiquewhite;
+        }
+        .text-tip {
+            color:red
+        }
+    </style>
+</head>
+<!-- 网页主体内容 -->
+<body>
+    <!-- 最外层容器 -->
+    <div class="container">
+        <span class="text-tip">hellow world</span>
+    </div>
+</body>
+<!-- 引入js文件，因为js文件会阻塞浏览器加载，所以引入一般不放在header里面，放在body外面不会影响页面渲染 -->
+<script src="./js/index.js"></script>
+ <!-- js代码块 -->
+<script>
+    // 在谷歌浏览器中右键选择检查会显示源代码，打开控制台可以看到输出的内容
+    console.log("hellow world loaded")
+</script>
+</html>
